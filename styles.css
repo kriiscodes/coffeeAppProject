@@ -760,11 +760,11 @@ input::placeholder{
     .sideBar{
         /* border: 2px solid; */
         border-radius: 20px;
-        width: 21rem;
+        width: 22rem;
         height: 30vh;
         position: absolute;
         position: fixed;
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -797,20 +797,11 @@ input::placeholder{
 
    }
 
-
-
-
-
-
-
-
-
-
-
-    .hero{
+      .hero{
         width: calc(100% - 40px);
         gap: 3rem;
         flex-direction: column;
+        
     }
 
     .heroContent{
@@ -835,10 +826,9 @@ input::placeholder{
 
     .heroImg{
         /* border: solid; */
-        width: 370px;
-
-
+        width: 395px;
     }
+  
      
     .btn_btn{
         gap: 7rem;
