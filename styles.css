@@ -1,0 +1,1145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{  
+   font-family: "Poppins", sans-serif;
+    font-style: normal;
+    /* position: relative; */
+    
+}
+header {
+   /* border: 2px solid; */
+   height: 114vh;
+   background-image: url(./images/bg-image.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   /* background-color: #f9d9aa; */
+   padding-top: 60px;
+  
+}
+.textCol{
+    color: #2F2105;
+}
+nav {
+   
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+   
+    
+
+}
+
+.genLayout {
+    max-width: 1180px;
+    margin: auto;
+}
+
+
+.innerNav{
+    padding-block: 0.7rem;
+    padding-inline: 1rem;
+    background-color: #f6ebda;
+    border-radius: 35px;
+}
+
+.innerNav,
+.navRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.innerNav > img {
+    width: 150px;
+}
+
+.navRight {
+    /* border: solid; */
+    width: 700px;
+    padding-right: 10px;
+    font-size: 30px;
+   
+}
+
+
+.navItems, .search{
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+
+.navItems > a {
+    color: black;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 16px;
+    width: 100px;
+}
+
+.navItems > a:first-child {
+    color: #ff902a;
+}
+
+.searchInputContainer{
+    background-color: #ffff;
+    border-radius: 25px;
+    padding-left: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid; */
+ 
+}
+
+.searchInputContainer > input{
+    padding: .7rem;
+    border-radius: px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    
+}
+
+.searchInputContainer > input::placeholder{
+    font-size: 12px;
+    text-transform: capitalize;
+    
+}
+
+.search > img{
+    width: 30px;
+}
+
+/* styling for hero section */
+
+.hero{
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    /* border: solid; */
+}
+
+.heroContent{
+    flex: 1.5;
+    /* border: solid; */
+}
+
+.heroContent > h1 {
+    width: 500px;
+    line-height: 4rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.heroContent > h1 > span{
+    color: #ff902a;
+}
+
+
+.heroContent > p {
+    width: 390px;
+    margin-block: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    color: #7E7D7A;
+}
+
+.btn_btn{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    /* border: solid; */
+    margin-top: 30px;
+}
+
+.btn_btn > button {
+    background-color: #2f2105;
+    color: #fff;
+    padding: 0.7rem 2.3rem;
+    border-radius: 25px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn_btn > button > span {
+    background-color: #ff902a;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn_btn > button > span > img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.btn_btn > a {
+    text-decoration: none;
+    color: #ff902a;
+    font-weight: 700;
+    font-size: 13px;
+   
+}
+
+
+.heroImg{
+    /* border: solid 2px; */
+    flex: 1.2;
+}
+
+
+.heroImg > img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border: solid; */
+    
+    
+
+
+}
+
+
+/* styling for Popular section menu */
+.sec{
+    padding-block: 4rem;
+}
+
+.popularMenu {
+  /* position: relative; */
+  height: 65vh;
+  max-width: 1280px;
+  margin: -320px auto 0;
+  /* border: solid; */
+  position: relative;
+}
+
+.popularMenu > h1{
+    margin-left: 3rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+  
+    
+}
+
+.popularMenu > h1 > span {
+  display: inline-block;
+  border-bottom: 4px solid coral;
+  line-height: 1;
+  padding-bottom: 0.1rem; 
+}
+
+.pMenuCardContainer{
+    height: 100%;
+    /* border: solid; */
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+
+.pMenuCardContainer :nth-child(1){
+    left: 7%;
+    
+}
+
+.pMenuCardContainer :nth-child(2){
+    left: 37%;
+   
+}
+
+.pMenuCardContainer :nth-child(3){
+    left: 67%;
+    
+}
+
+.pmenuCard{
+    border: solid 5px #fdf3e3;
+    width: 27%;
+    height: 47vh;
+    position: relative;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+    padding: 16px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px #cbc1b3;
+}
+
+.pmenuCard > span{
+    background-color: white;
+    padding: .2rem .5rem;
+    border: 4px solid #f1f1f1;
+    border-radius: 15px;
+    position: absolute;
+    font-size: 13px;
+    font-weight: 800;
+    top: 1.6rem;
+    left: 1.6rem;
+
+}
+
+.pTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 5px;
+    font-size: 1.4rem; 
+    font-weight: 400;
+}
+
+.pTitle > h3 {
+  font-weight: 500;
+}
+
+.pTitle > h4 {
+    font-weight: 600;
+}
+
+.pDescp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button{
+    padding: 4px 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #FFD28F;
+    border: solid 2px;
+}
+
+#btnCold{
+    margin-right: 100px;
+
+}
+
+
+
+
+
+.backgroundImg {
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/Rectangle\ 2.png);
+  background-repeat: no-repeat;
+  background-size: contain; 
+  background-position: center;
+  position: absolute;
+  bottom: 10px;
+  z-index: 1;
+}
+
+/* styling for services Menu  */
+ 
+.serviceSection{
+    /* border: solid; */
+    height: 60vh;
+}
+
+.serviceSection > h2{
+   
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    font-weight: 600;
+
+}
+.serviceSection > h2 > span {
+    display: inline-block;;
+    line-height: 1;
+    padding-bottom: 0.1rem; 
+    border-bottom: solid #ff902a 4px;
+}
+
+.serviceContainer{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.serviceCard{
+    /* border: solid; */
+    /* height: 100%; */
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7;
+}
+
+.serviceCard > h3{
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.serviceCard > h4{
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* styling for about us page */
+
+
+.aboutUs{
+    /* border: solid; */
+    height: 60vh;
+    background-image: url(./images/bg-image\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-block: 40px;
+  
+   
+}
+
+.aboutContainer{
+    /* border: solid; */
+    height:45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9rem;
+
+}
+
+.aboutContent{
+    margin-top: 120px;
+    /* border: solid; */
+    display: flex;
+    flex-direction: column; 
+    gap:20px;
+    width: 28%;
+    height: 35vh;
+}
+
+.aboutContent > h2 {
+    font-size: 1.7rem;
+    letter-spacing:1.1px;
+    font-weight: 600;
+}
+.aboutContent > h2 > span{
+   display: inline-block;;
+    line-height: 1;
+    padding-bottom: 0.1rem; 
+    border-bottom: solid #ff902a 4px;
+}
+
+.aboutContent > h3{
+    width: 19rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.aboutContent > p{
+    word-spacing: 2px;
+    color:  #7E7D7A;
+}
+
+#aboutBtn{
+    width: 31%;
+    font-size: 11px;
+    font-weight: 600;
+    padding-block: 11px;
+    border-radius: 20px;
+    border: none;
+    background-color: #2f2105;
+    color: #F4AE26;
+
+}
+
+
+
+
+
+
+
+/* styling for Grid section menu */
+
+
+.specialMenu > h1{
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.specialMenu > h1 > span{
+
+    border-bottom: 4px solid #ff902a;
+    display: inline-block;
+    line-height: 1.2;
+
+}
+
+.menuGrid{
+    margin-top: 1.3rem;
+    /* border: 2px solid; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 45px;
+
+}
+
+.menuCard{
+/* border: 2px solid red; */
+background-color: white;
+position: relative;
+box-shadow: .2rem .2rem .8rem 10px#f1f1f1;
+border-radius: 15px;
+padding: 1rem;
+/* width: 30%; */
+height: 47vh;
+
+}
+
+.menuCard > img{
+
+    width: 100%;
+    height: 29.5vh;
+
+}
+
+.menuCard > span{
+    background-color: white;
+    padding: .2rem .5rem;
+    border: 4px solid #f1f1f1;
+    border-radius: 15px;
+    position: absolute;
+    font-size: 13px;
+    font-weight: 800;
+    top: 1.6rem;
+    left: 1.6rem;
+
+}
+
+.menuTitle, .menuDescp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 15px;
+
+}
+
+.menuTitle{
+    margin-top: 6px;
+}
+
+
+.menuTitle > h2{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.menuTitle > h6{
+    font-size: 1.3rem;
+}
+
+.menuDescp > p{
+    width: 150px;
+    font-size: .85rem;
+    color: #7E7D7A;
+}
+
+
+/* styling for what they say about us section  */
+
+.backImg{
+
+ /* border: solid; */
+ height: 60vh;
+ width: 100%;
+ background-image: url(/images/bg-image\ \(3\).png);
+ background-repeat: no-repeat;
+ background-size: contain;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 5rem;
+}
+
+.content{
+    /* border: solid; */
+    width: 23%;
+    margin-bottom: 10px;
+    margin-left:8rem;
+
+}
+.content > h1{
+    font-size: 1.6rem;
+    word-spacing: 1.5px;
+    font-weight: 600;
+    line-height: 2.5;
+}
+.content > p{
+    width: 300px;
+    color:  #7E7D7A;
+}
+
+.imageContent{
+    /* border: solid; */
+    height: 40vh;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+
+
+}
+
+#image{
+    height: 100%;
+    width: 28%;
+    /* border: solid; */
+    position: relative;
+    
+}
+#image > img{
+    width: 85%;
+    height: 37vh;
+}
+
+#content{
+    border: 6px solid #faddb1;
+    height: 13vh;
+    width: 250px;
+    position: absolute;
+    bottom: 40px;
+    left: 25px;
+    padding: 8px;
+    background-color:#FFCB7C ;
+    border-radius: 20px;
+}
+#content > H3{
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+#content > p{
+    word-spacing: 2px;
+    width: 233px;
+    font-size: 13px;
+
+
+}
+
+
+/* styling for footer  */
+
+.footerContainer{
+    /* border: solid; */
+    height: 45vh;
+    background-image: url(/images/unsplash_ftA71vetxuo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 20px;
+    
+}
+
+.footerContainer > h3{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: white;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+input{
+   border: none;
+   background-color: transparent;
+   padding-left: 1rem;
+   outline: none;
+   
+}
+
+input::placeholder{
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#orderBtn{
+   font-size: 11px;
+   font-weight: 600;
+   color: #f1f1f1;
+   background-color: #2f2105;
+   padding-block: 12px;
+   padding-inline: 35px;
+   border-radius: 25px;
+}
+
+
+.inputEmail{
+    /* border: solid; */
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    background-color: white;
+    padding: 3px;
+}
+
+
+
+
+/* Responsive code */
+
+@media(min-width: 260px) and (max-width: 460px){
+  
+    header {
+   /* border: 2px solid; */
+   height: 100vh;
+   background-image: url(./images/Rectangle\ 9\ \(1\).png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   padding-top: 0px;
+   padding-bottom: 30px;
+ 
+   
+  
+}
+
+   
+    .innerNav{
+        width: calc(100% - 20px);
+        position: relative;
+    }
+
+    .innerNav > a > img{
+        width: 90%;
+    }
+
+    .navRight {
+        display: none;
+    }
+
+    .menuHamburger {
+        position: absolute;
+        width: 33px;
+        top: 11px;
+        right: 32px;
+        z-index: 999;
+        
+
+    }
+
+
+    .sideBar{
+        /* border: 2px solid; */
+        border-radius: 20px;
+        width: 21rem;
+        height: 30vh;
+        position: absolute;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 14px;
+        z-index: 999;
+        top: 0;
+        right:32px;
+        box-shadow: .2rem .2rem 20px #2F2105;
+        backdrop-filter:blur(10px); 
+        background-color: rgba(172, 106, 45, 0.4);
+        
+              
+    }
+    
+    .sideBar > a{
+
+        text-decoration: none;
+        text-transform: capitalize;
+        color: #16120d;
+        font-weight: 900;
+
+    }
+    
+   .cancel{
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+   }
+
+
+
+
+
+
+
+
+
+
+
+    .hero{
+        width: calc(100% - 40px);
+        gap: 3rem;
+        flex-direction: column;
+    }
+
+    .heroContent{
+        /* border: solid; */
+        width: 330px;
+        
+    }
+
+    .heroContent > h1 {
+        width: 100%;
+        font-size: 2.1rem;
+        line-height: 2.5rem ;  
+        /* text-align: center;  */
+        font-weight: 800;    
+    }
+
+    .heroContent > p{
+        width: 100%;
+        font-size: 1rem;
+        /* text-align: center; */
+    }
+
+    .heroImg{
+        /* border: solid; */
+        width: 370px;
+
+
+    }
+     
+    .btn_btn{
+        gap: 7rem;
+    }
+
+    .btn_btn > button{
+        padding: 0.5rem .8rem;
+        font-size: 12px;
+    }
+
+    .btn_btn > button > span{
+        width: 25px;
+        height: 20px;
+    }
+
+   
+    .sec{
+        padding-block: 1rem;
+    }
+
+   .popularMenu {
+    height: auto;
+    padding-bottom: 4rem;
+    margin: -10px auto 0;
+}
+
+
+.popularMenu > h1 {
+    margin-left: 2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+
+.pMenuCardContainer {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 2rem;
+}
+
+
+.pmenuCard {
+    position: relative;
+    width: 95%;
+    height: auto;
+}
+
+.pmenuCard > img {
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.pMenuCardContainer :nth-child(1),
+.pMenuCardContainer :nth-child(2),
+.pMenuCardContainer :nth-child(3) {
+    left: 0;
+}
+
+
+.backgroundImg {
+    height: 114.5%;
+    background-size: cover;
+    bottom: -30px;
+  
+    
+}
+
+.pmenuCard > span{
+   
+    margin-left: 25px; 
+
+}
+
+
+
+.serviceSection {
+      height: auto; /* allow section to grow naturally */
+      padding-block: 2rem;
+      text-align: center;
+  }
+
+  .serviceSection > h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      font-weight: 800;
+  }
+
+  .serviceContainer {
+      flex-direction: column;   /* stack cards vertically */
+      height: auto;
+      gap: 2.5rem;              /* reduce spacing */
+      padding-inline: 1.5rem;   /* add breathing space */
+  }
+
+  .serviceCard {
+      width: 100%;
+      line-height: 1.6;
+  }
+
+  .serviceCard > h3 {
+      font-size: 1.2rem;
+  }
+
+  .serviceCard > h4 {
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+  }
+
+
+.aboutUs {
+      height: auto;
+      background-size: cover;
+      background-position: center;
+      padding: 2.5rem 1.2rem;
+      margin-block: 20px;
+  }
+
+  .aboutContainer {
+      flex-direction: column;   /* stack image + text vertically */
+      height: auto;
+      gap: 2rem;
+  }
+
+  .aboutContent {
+      width: 100%;
+      height: auto;
+      margin-top: 0;
+      text-align: center;
+      gap: 15px;
+  }
+
+  .aboutContent > h2 {
+      font-size: 1.5rem;
+  }
+
+  .aboutContent > h3 {
+      width: 100%;
+      font-size: 1.2rem;
+  }
+
+  .aboutContent > p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+  }
+
+  #aboutBtn {
+      width: 50%;
+      font-size: 0.85rem;
+      padding-block: 10px;
+      margin: auto;
+  }
+
+   
+  .specialMenu > h1{
+        text-align: start;
+        margin-left: 14px;
+        letter-spacing: 0;
+        word-spacing: 0;
+        font-weight: 800;
+  }
+
+
+.menuGrid{
+        grid-template-columns: 1fr;   /* stack cards vertically */
+        gap: 25px;
+    }
+
+    .menuCard{
+        height: auto;
+        padding: .8rem;
+    }
+
+    .menuCard > img{
+        height: 250px;        /* keep good proportions */
+        object-fit: cover;
+    }
+
+    .menuCard > span{
+        /* font-size: 11px; */
+        /* padding: .15rem .45rem; */
+        top: 1.5rem;
+        left: 1.2rem;
+    }
+
+   
+
+    .menuDescp > p{
+        width: 100%;
+        font-size: .8rem;
+    }
+
+
+    
+    .backImg{
+        height: auto;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 20px 0;
+        background-size: cover;   /* fits better on small screens */
+        background-position: center;
+    }
+
+    .content{
+        width: 90%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .content > h1{
+        font-size: 1.3rem;
+        line-height: 1.8;
+    }
+
+    .content > p{
+        width: 100%;
+        font-size: .9rem;
+    }
+
+    /* ---------- IMAGE CONTENT ---------- */
+    .imageContent{
+        /* border: solid; */
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-inline: 10px;
+        
+    }
+
+    #image{
+        /* border: solid; */
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        /* position: relative; */
+    }
+
+    #image > img{
+        width: 100%;
+        height: auto;
+       
+    }
+
+    /* ---------- BOTTOM CARD ---------- */
+    #content{
+        /* height: auto; */
+        width: 80%;
+        /* position: static;      */
+        /* padding: 10px;
+        margin-top: 10px; */
+
+    }
+
+    #content > h3{
+        font-size: .9rem;
+    }
+
+    #content > p{
+        /* border: solid; */
+        width: 100%;
+        font-size: .8rem;
+    }
+  
+
+
+    .footerContainer{
+        height: 27vh;
+        border-radius: 0px;
+        margin-bottom: -18px;
+    }
+
+    .footerContainer > h3{
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 1.5;
+        padding-inline: 10px;
+    }
+
+    .inputEmail{
+        width: 80%;
+    }
+
+    input{
+        padding-left: 0.8rem;
+        font-size: .9rem;
+    }
+
+
+    #orderBtn{
+        padding-block: 12px;
+        padding-inline: 20px;
+    }
+}
+
+
+@media(min-width: 800px){
+    .hideOnDesktop{
+        display: none;
+    }
+}
+

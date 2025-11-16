@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Street App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- header section -->
+    <header id="home">
+      <nav>
+        <div class="innerNav genLayout">
+          <a href="#home"><img src="./images/logo_coffe.svg" alt="logo" /></a>
+          <div class="navRight">
+            <div class="navItems">
+              <a href="#about">about us</a>
+              <a href="#ourProduct">our product</a>
+              <a href="#delivery">delivery</a>
+            </div>
+
+            <div class="search">
+              <div class="searchInputContainer">
+                <span
+                  ><img src="./images/akar-icons_search.png" alt="search"
+                /></span>
+                <input type="search" placeholder="Enter coffee name.." />
+              </div>
+
+              <img src="./images/icons_cart.png" alt="shop" />
+            </div>
+          </div>
+        </div>
+         <img onclick = showMenu() src="./images/bars-solid-full.svg" alt="menu hamburger" class="menuHamburger hideOnDesktop">
+      </nav>
+
+      <!-- hero section -->
+      <div class="hero genLayout">
+        <div class="heroContent textCol">
+          <h1 >Enjoy your <span>coffee</span> before your activity</h1>
+          <p>
+            Boost your productivity and build your mood with a glass of coffee
+            in the morning
+          </p>
+
+          <div class="btn_btn">
+            <button>
+              Order now
+              <span><img src="./images/Frame 5.png" alt="cart" /></span>
+            </button>
+            <a href="#">More menu</a>
+          </div>
+        </div>
+        <div class="heroImg">
+          <img src="./images/img-hero.png" alt="heroImg" />
+        </div>
+      </div>
+
+      <!-- coffee image seed -->
+      <!-- <img src="" alt="coffeeSeed"> -->
+    </header>
+
+    <main>
+      <!-- popular section -->
+      <section class="sec">
+        <div class="popularMenu textCol">
+          <h1>Popular <span>Now</span></h1>
+          <div class="pMenuCardContainer">
+            <div class="pmenuCard">
+              <span>4.8 ⭐</span>
+              <img src="./images/img_product (3).png" alt="Vanilla Latte" />
+              <div class="pTitle">
+                <h3>Vanilla Latte</h3>
+                <h4>21 k</h4>
+              </div>
+              <div class="pDescp">
+                <button>Hot</button>
+                <button id="btnCold">Cold</button>
+                <span><img src="./images/Frame 5.png" alt="cart" /></span>
+              </div>
+            </div>
+            <div class="pmenuCard">
+              <span>4.8 ⭐</span>
+              <img src="./images/img_product (4).png" alt="Vanilla Latte" />
+              <div class="pTitle">
+                <h3>Espresso</h3>
+                <h4>12 k</h4>
+              </div>
+              <div class="pDescp">
+                <button>Hot</button>
+                <button id="btnCold">Cold</button>
+                <span><img src="./images/Frame 5.png" alt="cart" /></span>
+              </div>
+            </div>
+            <div class="pmenuCard">
+              <span>4.8 ⭐</span>
+              <img src="./images/img_product (5).png" alt="Vanilla Latte" />
+              <div class="pTitle">
+                <h3>Hazelnut Latte</h3>
+                <h4>23 k</h4>
+              </div>
+              <div class="pDescp">
+                <button>Hot</button>
+                <button id="btnCold">Cold</button>
+                <span><img src="./images/Frame 5.png" alt="cart" /></span>
+              </div>
+            </div>
+            <div class="backgroundImg"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Services section -->
+      <section class="sec genLayout" id="delivery">
+        <div class="serviceSection textCol">
+          <h2>How to use delivery <span>service</span></h2>
+          <div class="serviceContainer">
+            <div class="serviceCard">
+              <img src="./images/image.png" alt="cup" />
+              <h3>Choose your coffee</h3>
+              <h4>there are 20+ coffees for you</h4>
+            </div>
+            <div class="serviceCard">
+              <img src="./images/food-truck 1.png" alt="cup" />
+              <h3>We deliver it to you</h3>
+              <h4>choose delivery service</h4>
+            </div>
+            <div class="serviceCard">
+              <img src="./images/coffee-cup 2.png" alt="cup" />
+              <h3>Enjoy your coffee</h3>
+              <h4>choose delivery service</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about us section -->
+
+      <section id="about">
+        <div class="aboutUs textCol">
+          <div class="aboutContainer">
+            <div class="aboutImg">
+              <img src="./images/Group 6.png" alt="coffee cup" >
+            </div>
+            <div class="aboutContent">
+              <h2>About <span>us</span></h2>
+              <h3>We provide quality coffee, and ready to deliver.</h3>
+              <p>We are a company that makes and distributes
+                delicious drinks. our main product is made with a 
+               secret receipe and avavilable in stores worldwide.</p>
+              
+
+              <button id="aboutBtn">Get your coffee</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- grid section     -->
+      <section class="sec" id="ourProduct">
+        <div class="specialMenu genLayout textCol">
+             <h1>Special menu <span>for you</span></h1>
+
+             <div class="menuGrid">
+                    <!-- card one -->
+                    <div class="menuCard">
+                        <span>4.8 ⭐</span>
+                        <img src="./images/img_product.png" alt="sandwich">
+
+                        <div class="menuCardContent">
+                            <div class="menuTitle">
+                                <h2>sandwich</h2>
+
+                                <h6>12 k</h6>
+                            </div>
+                            <div>
+                                <div class="menuDescp">
+                                    <p>bread with meat and vegetables</p>
+
+                                    <span>
+                                        <img src="./images/Frame 5.png" alt="cart">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card two -->
+                    <div class="menuCard">
+                        <span>4.8 ⭐</span>
+                        <img src="./images/img_product (6).png" alt="sandwich">
+
+                        <div class="menuCardContent">
+                            <div class="menuTitle">
+                                <h2>hot milk</h2>
+
+                                <h6>12 k</h6>
+                            </div>
+                            <div>
+                                <div class="menuDescp">
+                                    <p>Hot Milk with less sugar</p>
+
+                                    <span>
+                                        <img src="./images/Frame 5.png" alt="cart">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card three -->
+                    <div class="menuCard">
+                        <span>4.8 ⭐</span>
+                        <img src="./images/img_product (7).png" alt="sandwich">
+
+                        <div class="menuCardContent">
+                            <div class="menuTitle">
+                                <h2>Coffe Ice Cream</h2>
+
+                                <h6>12 k</h6>
+                            </div>
+                            <div>
+                                <div class="menuDescp">
+                                    <p>coffe with ice cream vanilla</p>
+
+                                    <span>
+                                        <img src="./images/Frame 5.png" alt="cart">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card four -->
+                    <div class="menuCard">
+                        <span>4.8 ⭐</span>
+                        <img src="./images/img_product (8).png" alt="sandwich">
+
+                        <div class="menuCardContent">
+                            <div class="menuTitle">
+                                <h2>cappucino</h2>
+
+                                <h6>12 k</h6>
+                            </div>
+                            <div>
+                                <div class="menuDescp">
+                                    <p>Hot Cappucino</p>
+
+                                    <span>
+                                        <img src="./images/Frame 5.png" alt="cart">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card five -->
+                    <div class="menuCard">
+                        <span>4.8 ⭐</span>
+                        <img src="./images/img_product (9).png" alt="sandwich">
+
+                        <div class="menuCardContent">
+                            <div class="menuTitle">
+                                <h2>Moccacinno</h2>
+
+                                <h6>12 k</h6>
+                            </div>
+                            <div>
+                                <div class="menuDescp">
+                                    <p>Hot Moccacino</p>
+
+                                    <span>
+                                        <img src="./images/Frame 5.png" alt="cart">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card six -->
+                    <div class="menuCard">
+                        <span>4.8 ⭐</span>
+                        <img src="./images/img_product (10).png" alt="sandwich">
+
+                        <div class="menuCardContent">
+                            <div class="menuTitle">
+                                <h2>Waffle Ice Cream</h2>
+
+                                <h6>12 k</h6>
+                            </div>
+                            <div>
+                                <div class="menuDescp">
+                                    <p>Waffle with Ice cream</p>
+
+                                    <span>
+                                        <img src="./images/Frame 5.png" alt="cart">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+      </section>
+<!-- what they say about us section  -->
+ <section class="sec">
+    <div class="backImg textCol">
+        <div class="content">
+            <h1>What they say about us</h1>
+            <p>we always provide the best service and always maintain
+                the quality of coffee 
+            </p>
+        </div>
+
+        <div class="imageContent">          
+            <div id="image">
+                <img src="/images/unsplash_b3AYk8HKCl0.png" alt="Naura">
+                <div id="content">
+                    <h3>Naura</h3>
+                    <p>i really love the cappucino,the coffee was very
+                        smooth
+                    </p>
+                </div>
+            </div>
+            <div id="image">
+                <img src="/images/unsplash_SJvDxw0azqw.png" alt="John">
+                <div id="content">
+                    <h3>John</h3>
+                    <p>this coffee shop is very convenient
+                    </p>
+                </div>
+            </div>
+            <div id="image">
+                <img src="/images/unsplash_iEEBWgY_6lA.png" alt="Azura">
+                <div id="content">
+                    <h3>Azura</h3>
+                    <p>the coffee menu here is very much
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+ 
+    </main>
+
+<footer class="sec genLayout">
+    <div class="footerContainer">
+        <h3>Subscribe to get 50% discount price</h3>
+        <div class="inputEmail">
+            <input type="Email" placeholder="Email address">
+            <button id="orderBtn">Order now</button>
+         </div>
+    </div>
+ </footer>
+
+    <div class="sideBar hideOnDesktop">
+              <a href="#about">about us</a>
+              <a href="#ourProduct">our product</a>
+              <a href="#delivery">delivery</a>
+            
+         
+            <img onclick=hideMenu() src="./images/x-solid-full.svg" alt="cancel" class="cancel hideOnDesktop" >
+        
+    </div>
+   
+    <script>
+        function showMenu(){
+            const sideBar = document.querySelector('.sideBar ')
+            sideBar.style.display = 'flex'
+        }
+
+        function hideMenu(){
+            const sideBar = document.querySelector('.sideBar ')
+            sideBar.style.display = 'none'
+        }
+    </script>
+    
+  </body>
+</html>
