@@ -38,7 +38,7 @@ nav {
 }
 
 .genLayout {
-    max-width: 1180px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -732,7 +732,11 @@ input::placeholder{
   
 }
 
-   
+   nav{
+
+    margin-top: 1px;
+
+   }
     .innerNav{
         width: calc(100% - 20px);
         position: relative;
